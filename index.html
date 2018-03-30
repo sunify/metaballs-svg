@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SVG Metaballs</title>
+  <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="graph"></canvas>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="230" height="245" id="amoebe">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" result="mat" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -19"/>
+      </filter>
+    </defs>
+
+    <g filter="url(#goo)">
+      <path id="check" d="M30,70 L100,140 L200,40" fill="none" stroke-width="40" stroke="#cf0" />
+      <circle cx="0" cy="0" r="30" />
+      <circle cx="0" cy="0" r="30" />
+      <circle cx="0" cy="0" r="30" />
+      <circle cx="0" cy="0" r="30" />
+      <circle cx="0" cy="0" r="30" />
+    </g>
+  </svg>
+
+  <script src="index.js"></script>
+</body>
+</html>

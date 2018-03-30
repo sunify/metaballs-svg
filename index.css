@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  background-color: #FFF;
+  -webkit-user-select: none;
+}
+
+path {
+  transition: opacity 1s;
+}
+
+svg, canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+canvas {
+  z-index: 1;
+}
