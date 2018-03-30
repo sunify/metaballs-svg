@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>SVG Metaballs</title>
-  <link href="index.css" rel="stylesheet" />
+  <link href="src/index.css" rel="stylesheet" />
 </head>
 <body>
   <canvas id="graph"></canvas>
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="230" height="245" id="amoebe">
     <defs>
       <filter id="goo">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
-        <feColorMatrix in="blur" mode="matrix" result="mat" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -19"/>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur"></feGaussianBlur>
+        <feColorMatrix in="blur" mode="matrix" result="mat" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -19"></feColorMatrix>
       </filter>
     </defs>
 
@@ -26,6 +26,6 @@
     </g>
   </svg>
 
-  <script src="index.js"></script>
+  <script src="src/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+{
+  "name": "metaballs-svg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sunify/metaballs-svg.git",
+  "scripts": {
+    "start": "./node_modules/.bin/parcel index.html"
+  },
+  "author": "Alex Lunyov <isuntc@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.7.0"
+  }
+}
